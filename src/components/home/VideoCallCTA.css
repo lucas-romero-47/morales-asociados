@@ -1,0 +1,61 @@
+.videocall-cta {
+  position: relative;
+  padding: var(--spacing-5xl) 0;
+  overflow: hidden;
+}
+
+.videocall-cta-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-primary-dark) 50%, var(--color-primary) 100%);
+  clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+}
+
+.videocall-cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+}
+
+.videocall-cta-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background: rgba(196, 169, 98, 0.15);
+  border: 2px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-xl);
+  color: var(--color-accent);
+}
+
+.videocall-cta-title {
+  font-size: var(--fs-3xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.videocall-cta-text {
+  font-size: var(--fs-md);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.videocall-cta-btn {
+  font-size: var(--fs-md);
+  padding: var(--spacing-md) var(--spacing-2xl);
+}
+
+@media (max-width: 768px) {
+  .videocall-cta-bg {
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+  }
+
+  .videocall-cta-title {
+    font-size: var(--fs-2xl);
+  }
+}

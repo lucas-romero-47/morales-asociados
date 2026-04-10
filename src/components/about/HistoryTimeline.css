@@ -1,0 +1,130 @@
+.history {
+  background-color: var(--color-bg-light);
+}
+
+.history-intro {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto var(--spacing-3xl);
+  font-size: var(--fs-md);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-primary-light));
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: var(--spacing-md) var(--spacing-2xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.timeline-left {
+  left: 0;
+  text-align: right;
+  padding-right: var(--spacing-3xl);
+}
+
+.timeline-right {
+  left: 50%;
+  text-align: left;
+  padding-left: var(--spacing-3xl);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: var(--spacing-xl);
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-bg-light);
+  z-index: 1;
+}
+
+.timeline-left .timeline-dot {
+  right: -8px;
+}
+
+.timeline-right .timeline-dot {
+  left: -8px;
+}
+
+.timeline-content {
+  background-color: var(--color-bg-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.timeline-content:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary-light);
+  background-color: rgba(0, 153, 214, 0.1);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-title {
+  font-size: var(--fs-lg);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-description {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    padding-left: 50px;
+    padding-right: var(--spacing-md);
+  }
+
+  .timeline-left .timeline-dot,
+  .timeline-right .timeline-dot {
+    left: 12px;
+    right: auto;
+  }
+}
