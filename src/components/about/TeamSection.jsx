@@ -1,4 +1,3 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
 import { TEAM, SPECIALTIES } from '../../data/team';
 import './TeamSection.css';
 import estudioImg from '../../assets/images/estudio.webp';
