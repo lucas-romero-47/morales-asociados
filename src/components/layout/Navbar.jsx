@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import './Navbar.css';
+import logoImg from '../../assets/images/mya-logo.png';
 
 const NAV_LINKS = [
   { path: '/', label: 'Inicio' },
@@ -42,7 +43,7 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`} id="navbar" role="navigation" aria-label="Navegación principal">
       <div className="container navbar-content">
         <Link to="/" className="navbar-brand" aria-label="Ir al inicio">
-          <img src="/mya-logo.png" alt="Morales & Asociados" className="navbar-logo" width="48" height="48" />
+          <img src={logoImg} alt="Morales & Asociados" className="navbar-logo" width="48" height="48" />
           <div className="navbar-brand-text">
             <span className="navbar-brand-name">Morales & Asociados</span>
             <span className="navbar-brand-subtitle">Estudio Contable</span>
