@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import './Footer.css';
+import logoImg from '../../assets/images/mya-logo.png';
 
 const FOOTER_LINKS = [
   { path: '/', label: 'Inicio' },
@@ -19,7 +20,7 @@ export default function Footer() {
       <div className="footer-main">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <img src="/mya-logo.png" alt="Morales & Asociados" className="footer-logo" width="60" height="60" />
+            <img src={logoImg} alt="Morales & Asociados" className="footer-logo" width="60" height="60" />
             <h3 className="footer-title">Morales & Asociados</h3>
             <p className="footer-tagline">Estudio Contable desde 1993</p>
             <p className="footer-description">

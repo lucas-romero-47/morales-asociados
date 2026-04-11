@@ -11,7 +11,7 @@ export default function ContactPage() {
             <h2>Contacto</h2>
           </div>
           <p className="page-header-subtitle">
-            Estamos para ayudarte. Escribinos o solicitá una videorreunión sin costo.
+            Estamos para ayudarte. Escribinos o solicitá una asesoría online sin costo.
           </p>
         </div>
       </div>

@@ -96,7 +96,7 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit} id="contact-form" noValidate autoComplete="on">
-      <h3 className="contact-form-title">Solicitar Consulta / Videorreunión</h3>
+      <h3 className="contact-form-title">Solicitar Consulta / Asesoría Online</h3>
       <p className="contact-form-subtitle">
         Completá el formulario y nos pondremos en contacto para coordinar una reunión presencial o por Zoom.
       </p>

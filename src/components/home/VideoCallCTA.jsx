@@ -12,11 +12,11 @@ export default function VideoCallCTA() {
         </div>
         <h2 className="videocall-cta-title">Asesoramiento por Videollamada</h2>
         <p className="videocall-cta-text">
-          Solicitá una videorreunión por Zoom sin costo. Resolvé tus consultas impositivas, 
+          Solicitá una asesoría online por Zoom sin costo. Resolvé tus consultas impositivas, 
           laborales o societarias desde la comodidad de tu oficina o tu casa.
         </p>
         <Link to="/contacto" className="btn btn-accent videocall-cta-btn">
-          Solicitar Videorreunión
+          Solicitar Asesoría Online
           <ArrowRight size={18} />
         </Link>
       </div>
